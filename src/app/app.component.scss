@@ -1,0 +1,91 @@
+.container {
+    width: 30rem;
+    height: 50rem;
+    margin: 3rem auto;
+    background-color: var(--color3);
+    border-radius: 1.3rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, 0.5);
+
+    .container-head {
+        width: 30rem;
+        height: 23rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.1)), url('../assets/87633-OKEB4F-11.jpg');
+        background-size: 30rem;
+        background-position-x: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    
+        .head-content {
+            text-align: center;
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+        }
+    }
+
+    .container-body {
+        width: 100%;
+        flex-grow: 1;
+        padding: 1.3rem;
+        padding-top: 0;
+        display: flex;
+        flex-direction: column;
+
+        .body-title {
+            padding: .5rem;
+            padding-left: 0;
+            font-size: 1rem;
+        }
+
+        .body-content {
+            width: 100%;
+            flex-grow: 1;
+            background-color: rgba(white, .2);
+            border-radius: 0 0 1.3rem 1.3rem;
+            padding: 1rem;
+            font-size: 3rem;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+
+            .card {
+                margin: .3rem;
+                width: 45%;
+                flex-grow: 1;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(white, .2);
+                border-radius: .5rem;
+                
+                .card-info {
+                    display: flex;
+                    flex-direction: column;
+                    font-size: .55rem;
+                }
+
+                .card-value {
+                    margin-left: 1rem;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+    .container {
+        margin: 0 auto;
+        border-radius: 0;
+    }
+}
